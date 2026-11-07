@@ -95,24 +95,13 @@ An interactive prediction interface allows users to enter environmental and comm
 
 ## Repository Contents
 
-```text
-AI-Based-SNR-Prediction/
-│
-├── SNR_Prediction_ML_Implementation.ipynb
-├── SNR_Project_Results.zip
-├── README.md
-├── LICENSE
-│
-├── models/
-│   └── SNR_Final_Model.pkl
-│
-└── results/
-    ├── Model_Comparison.csv
-    ├── Model_Comparison.png
-    ├── Actual_vs_Predicted.csv
-    ├── Actual_vs_Predicted.png
-    ├── Feature_Importance.csv
-    └── Feature_Importance.png
+- `SNR_Prediction_ML_Implementation.ipynb` – Complete implementation, preprocessing, model training, evaluation and interactive prediction interface.
+- `models/SNR_Final_Model.pkl` – Trained Random Forest model.
+- `results/Model_Comparison.csv` – Performance comparison of all regression models.
+- `results/Actual_vs_Predicted.csv` – Actual and predicted SNR values.
+- `results/Feature_Importance.csv` – Feature importance scores.
+- `results/` – Contains CSV results and PNG visualisations.
+- `SNR_Project_Results.zip` – Packaged project results and trained model.g
 ```
 
 ### Key Files
