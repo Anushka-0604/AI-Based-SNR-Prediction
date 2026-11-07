@@ -95,8 +95,35 @@ An interactive prediction interface allows users to enter environmental and comm
 
 ## Repository Contents
 
-- `SNR_Prediction_ML_Implementation.ipynb` – Complete implementation, preprocessing, model training, evaluation and prediction interface.
-- Additional model files, results and visualisations will be added as the project is organised.
+```text
+AI-Based-SNR-Prediction/
+│
+├── SNR_Prediction_ML_Implementation.ipynb
+├── SNR_Project_Results.zip
+├── README.md
+├── LICENSE
+│
+├── models/
+│   └── SNR_Final_Model.pkl
+│
+└── results/
+    ├── Model_Comparison.csv
+    ├── Model_Comparison.png
+    ├── Actual_vs_Predicted.csv
+    ├── Actual_vs_Predicted.png
+    ├── Feature_Importance.csv
+    └── Feature_Importance.png
+```
+
+### Key Files
+
+- **Jupyter Notebook:** Complete implementation, preprocessing, model training, evaluation and prediction interface.
+- **Trained Model:** `models/SNR_Final_Model.pkl`
+- **Model Comparison:** `results/Model_Comparison.csv`
+- **Feature Importance:** `results/Feature_Importance.csv`
+- **Actual vs Predicted Results:** `results/Actual_vs_Predicted.csv`
+- **Visualisations:** Available in the `results/` folder.
+- **ZIP Archive:** Contains the packaged project results and trained model.
 
 ## Research Note
 
