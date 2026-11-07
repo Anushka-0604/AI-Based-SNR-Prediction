@@ -10,7 +10,7 @@ The project is based on the research paper:
 
 **"SNR Prediction Based on Environmental Sensing Data: An Approach Using Machine Learning" (2025)**
 
-Authors: Kanchanarat Chokruay and Anya Apavatjrut.
+**Authors:** Kanchanarat Chokruay and Anya Apavatjrut.
 
 ## Objectives
 
@@ -26,9 +26,10 @@ The project uses the publicly available LoRaWAN dataset:
 
 [LoRa RSSI Dataset – GitHub](https://github.com/emanueleg/lora-rssi)
 
-Dataset source: Vineyard-2021.
+**Dataset source:** Vineyard-2021.
 
 The dataset includes:
+
 - Temperature
 - Humidity
 - Atmospheric pressure
@@ -40,7 +41,7 @@ The dataset includes:
 - Battery measurements
 - Communication parameters
 
-Eight LoRaWAN sensor nodes are included.
+Eight LoRaWAN sensor nodes are included in the dataset.
 
 ## Methodology
 
@@ -48,7 +49,7 @@ Eight LoRaWAN sensor nodes are included.
 2. Missing-value investigation and data cleaning.
 3. Timestamp alignment and hourly aggregation.
 4. Integration of environmental and sensor datasets.
-5. Exploratory Data Analysis.
+5. Exploratory Data Analysis (EDA).
 6. Feature engineering and selection.
 7. Machine learning model development.
 8. Model evaluation and comparison.
@@ -95,24 +96,39 @@ An interactive prediction interface allows users to enter environmental and comm
 
 ## Repository Contents
 
-- `SNR_Prediction_ML_Implementation.ipynb` – Complete implementation, preprocessing, model training, evaluation and interactive prediction interface.
-- `models/SNR_Final_Model.pkl` – Trained Random Forest model.
-- `results/Model_Comparison.csv` – Performance comparison of all regression models.
-- `results/Actual_vs_Predicted.csv` – Actual and predicted SNR values.
-- `results/Feature_Importance.csv` – Feature importance scores.
-- `results/` – Contains CSV results and PNG visualisations.
-- `SNR_Project_Results.zip` – Packaged project results and trained model.g
+The repository is organised as follows:
+
+```text
+AI-Based-SNR-Prediction/
+│
+├── SNR_Prediction_ML_Implementation.ipynb
+├── SNR_Project_Results.zip
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── models/
+│   ├── .gitkeep
+│   └── SNR_Final_Model.pkl
+│
+└── results/
+    ├── Model_Comparison.csv
+    ├── Model_Comparison.png
+    ├── Actual_vs_Predicted.csv
+    ├── Actual_vs_Predicted.png
+    ├── Feature_Importance.csv
+    └── Feature_Importance.png
 ```
 
 ### Key Files
 
-- **Jupyter Notebook:** Complete implementation, preprocessing, model training, evaluation and prediction interface.
-- **Trained Model:** `models/SNR_Final_Model.pkl`
-- **Model Comparison:** `results/Model_Comparison.csv`
-- **Feature Importance:** `results/Feature_Importance.csv`
-- **Actual vs Predicted Results:** `results/Actual_vs_Predicted.csv`
-- **Visualisations:** Available in the `results/` folder.
-- **ZIP Archive:** Contains the packaged project results and trained model.
+- **Jupyter Notebook:** Complete implementation, preprocessing, model training, evaluation and interactive prediction interface.
+- **Trained Model:** `models/SNR_Final_Model.pkl` – Saved Random Forest model trained on the complete labelled dataset.
+- **Model Comparison:** `results/Model_Comparison.csv` – Performance comparison of all regression algorithms.
+- **Actual vs Predicted:** `results/Actual_vs_Predicted.csv` – Actual and predicted SNR values from test-set evaluation.
+- **Feature Importance:** `results/Feature_Importance.csv` – Feature importance scores obtained from the Random Forest model.
+- **Visualisations:** PNG graphs showing model comparison, actual vs predicted SNR, and feature importance.
+- **ZIP Archive:** `SNR_Project_Results.zip` – Packaged project results and trained model.
 
 ## Research Note
 
